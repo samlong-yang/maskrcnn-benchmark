@@ -4,6 +4,7 @@ Simple dataset class that wraps a list of path names
 """
 
 from PIL import Image
+Image.LOAD_TRUNCATED_IMAGES = True # in case truncated images
 
 from maskrcnn_benchmark.structures.bounding_box import BoxList
 
